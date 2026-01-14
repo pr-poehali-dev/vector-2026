@@ -376,26 +376,30 @@ const Index = () => {
             <h3 className="text-2xl font-semibold text-primary mb-8">
               Практикум «ВЕКТОР 2026»
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-              <div className="p-4 bg-muted/30 rounded-xl flex items-center justify-center gap-2">
-                <Icon name="Monitor" className="text-accent flex-shrink-0" size={20} />
-                <span className="text-foreground">онлайн-формат</span>
+            <div className="flex flex-col items-center gap-4 mb-8 max-w-2xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+                <div className="p-4 bg-muted/30 rounded-xl flex items-center justify-center gap-2">
+                  <Icon name="Monitor" className="text-accent flex-shrink-0" size={20} />
+                  <span className="text-foreground">онлайн-формат</span>
+                </div>
+                <div className="p-4 bg-muted/30 rounded-xl flex items-center justify-center gap-2">
+                  <Icon name="Calendar" className="text-accent flex-shrink-0" size={20} />
+                  <span className="text-foreground">2 недели работы</span>
+                </div>
+                <div className="p-4 bg-muted/30 rounded-xl flex items-center justify-center gap-2">
+                  <Icon name="Radio" className="text-accent flex-shrink-0" size={20} />
+                  <span className="text-foreground">8 живых эфиров</span>
+                </div>
               </div>
-              <div className="p-4 bg-muted/30 rounded-xl flex items-center justify-center gap-2">
-                <Icon name="Calendar" className="text-accent flex-shrink-0" size={20} />
-                <span className="text-foreground">2 недели работы</span>
-              </div>
-              <div className="p-4 bg-muted/30 rounded-xl flex items-center justify-center gap-2">
-                <Icon name="Radio" className="text-accent flex-shrink-0" size={20} />
-                <span className="text-foreground">8 живых эфиров</span>
-              </div>
-              <div className="p-4 bg-muted/30 rounded-xl flex items-center justify-center gap-2">
-                <Icon name="FileText" className="text-accent flex-shrink-0" size={20} />
-                <span className="text-foreground">задания и практики</span>
-              </div>
-              <div className="p-4 bg-muted/30 rounded-xl flex items-center justify-center gap-2">
-                <Icon name="MessageCircle" className="text-accent flex-shrink-0" size={20} />
-                <span className="text-foreground">поддержка в процессе</span>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-2/3">
+                <div className="p-4 bg-muted/30 rounded-xl flex items-center justify-center gap-2">
+                  <Icon name="FileText" className="text-accent flex-shrink-0" size={20} />
+                  <span className="text-foreground">задания и практики</span>
+                </div>
+                <div className="p-4 bg-muted/30 rounded-xl flex items-center justify-center gap-2">
+                  <Icon name="MessageCircle" className="text-accent flex-shrink-0" size={20} />
+                  <span className="text-foreground">поддержка в процессе</span>
+                </div>
               </div>
             </div>
             <div className="border-t border-border pt-8 mb-8">
