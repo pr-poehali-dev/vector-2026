@@ -84,12 +84,14 @@ const Index = () => {
         </header>
 
         <section className="mb-20 text-center animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-8">
-            Определите, чего вы действительно хотите в 2026 году
-          </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10">
-            и выстройте понятный маршрут без откатов и самосаботажа
-          </p>
+          <div className="border-4 border-accent rounded-2xl p-8 md:p-10 max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-6">
+              Определите, чего вы действительно хотите в 2026 году
+            </h2>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              и выстройте понятный маршрут без откатов и самосаботажа
+            </p>
+          </div>
         </section>
 
         <section className="mb-20 bg-card rounded-2xl p-8 md:p-12 shadow-sm animate-fade-in" style={{ animationDelay: '0.4s' }}>
@@ -182,8 +184,11 @@ const Index = () => {
               <Button 
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-white px-12 py-6 text-lg font-medium"
+                asChild
               >
-                Записаться
+                <a href="https://t.me/millionskorny/4993" target="_blank" rel="noopener noreferrer">
+                  Записаться
+                </a>
               </Button>
             </div>
           </div>
@@ -306,8 +311,11 @@ const Index = () => {
             <Button 
               size="lg"
               className="bg-accent hover:bg-accent/90 text-white px-12 py-6 text-lg font-medium"
+              asChild
             >
-              Хочу участвовать
+              <a href="https://t.me/millionskorny/4993" target="_blank" rel="noopener noreferrer">
+                Хочу участвовать
+              </a>
             </Button>
           </div>
         </section>
@@ -319,9 +327,11 @@ const Index = () => {
           <div className="bg-card rounded-2xl p-8 md:p-12 shadow-sm">
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="flex-shrink-0">
-                <div className="w-48 h-48 bg-muted rounded-full flex items-center justify-center">
-                  <Icon name="User" className="text-muted-foreground" size={80} />
-                </div>
+                <img 
+                  src="https://cdn.poehali.dev/files/Алена .jpg" 
+                  alt="Алёна Галсанова" 
+                  className="w-48 h-48 rounded-full object-cover"
+                />
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-semibold text-primary mb-2">Алёна Галсанова</h3>
@@ -362,35 +372,39 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-10 text-center">
             Формат и стоимость
           </h2>
-          <div className="bg-card rounded-2xl p-8 md:p-12 shadow-sm max-w-2xl mx-auto text-center">
+          <div className="bg-card rounded-2xl p-8 md:p-12 shadow-sm max-w-3xl mx-auto text-center">
             <h3 className="text-2xl font-semibold text-primary mb-8">
               Практикум «ВЕКТОР 2026»
             </h3>
-            <div className="space-y-4 mb-8">
-              <p className="text-lg text-foreground flex items-center justify-center gap-3">
-                <Icon name="Monitor" className="text-accent" size={20} />
-                онлайн-формат
-              </p>
-              <p className="text-lg text-foreground flex items-center justify-center gap-3">
-                <Icon name="Calendar" className="text-accent" size={20} />
-                2 недели работы
-              </p>
-              <p className="text-lg text-foreground flex items-center justify-center gap-3">
-                <Icon name="Radio" className="text-accent" size={20} />
-                8 живых эфиров
-              </p>
-              <p className="text-lg text-foreground flex items-center justify-center gap-3">
-                <Icon name="FileText" className="text-accent" size={20} />
-                задания и практики
-              </p>
-              <p className="text-lg text-foreground flex items-center justify-center gap-3">
-                <Icon name="MessageCircle" className="text-accent" size={20} />
-                поддержка в процессе
-              </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+              <div className="p-4 bg-muted/30 rounded-xl flex items-center justify-center gap-2">
+                <Icon name="Monitor" className="text-accent flex-shrink-0" size={20} />
+                <span className="text-foreground">онлайн-формат</span>
+              </div>
+              <div className="p-4 bg-muted/30 rounded-xl flex items-center justify-center gap-2">
+                <Icon name="Calendar" className="text-accent flex-shrink-0" size={20} />
+                <span className="text-foreground">2 недели работы</span>
+              </div>
+              <div className="p-4 bg-muted/30 rounded-xl flex items-center justify-center gap-2">
+                <Icon name="Radio" className="text-accent flex-shrink-0" size={20} />
+                <span className="text-foreground">8 живых эфиров</span>
+              </div>
+              <div className="p-4 bg-muted/30 rounded-xl flex items-center justify-center gap-2">
+                <Icon name="FileText" className="text-accent flex-shrink-0" size={20} />
+                <span className="text-foreground">задания и практики</span>
+              </div>
+              <div className="p-4 bg-muted/30 rounded-xl flex items-center justify-center gap-2">
+                <Icon name="MessageCircle" className="text-accent flex-shrink-0" size={20} />
+                <span className="text-foreground">поддержка в процессе</span>
+              </div>
             </div>
             <div className="border-t border-border pt-8 mb-8">
-              <p className="text-3xl font-bold text-primary mb-2">3 500 ₽</p>
-              <p className="text-lg text-muted-foreground">Стоимость участия</p>
+              <div className="flex items-center justify-center gap-3 mb-2">
+                <p className="text-3xl font-bold text-primary">3 500 ₽</p>
+                <p className="text-xl text-muted-foreground line-through">вместо 7 000 ₽</p>
+              </div>
+              <p className="text-lg text-muted-foreground mb-3">Стоимость участия</p>
+              <p className="text-accent font-medium">Из 10 мест осталось 3</p>
             </div>
             <div className="bg-muted/30 rounded-xl p-4 mb-8">
               <p className="text-lg font-medium text-foreground">
@@ -400,8 +414,11 @@ const Index = () => {
             <Button 
               size="lg"
               className="bg-accent hover:bg-accent/90 text-white px-12 py-6 text-lg font-medium"
+              asChild
             >
-              Оплатить участие
+              <a href="https://t.me/millionskorny/4993" target="_blank" rel="noopener noreferrer">
+                Оплатить участие
+              </a>
             </Button>
           </div>
         </section>
@@ -437,8 +454,11 @@ const Index = () => {
             <Button 
               size="lg"
               className="bg-accent hover:bg-accent/90 text-white px-12 py-6 text-lg font-medium"
+              asChild
             >
-              Хочу участвовать
+              <a href="https://t.me/millionskorny/4993" target="_blank" rel="noopener noreferrer">
+                Хочу участвовать
+              </a>
             </Button>
           </div>
         </section>
